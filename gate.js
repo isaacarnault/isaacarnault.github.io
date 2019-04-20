@@ -20,7 +20,14 @@ return " ";
 }
 </SCRIPT>
 <CENTER>
-<FORM>
+<FORM style="height: 100%;
+position: fixed;
+z-index: 2020;
+background: white;
+width: 100%;
+vertical-align: middle;
+padding-top: 10%;
+}">
 <input type="button" value="Enter Protected Area" onClick="passWord()">
 </FORM>
 </CENTER>
