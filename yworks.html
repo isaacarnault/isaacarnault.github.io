@@ -10,22 +10,17 @@ display: none !important
 }
 </style>
 
-<script language="javascript">
-function pasuser(form) { 
-if (form.id.value=="secretname") { 
-if (form.pass.value=="secretpassword") { location="http://quickonlinetips.com/" } 
-else { alert("Wrong Password") } 
+<SCRIPT language="JavaScript">
+var password; 
+var pass1="secretpassword"; 
+password=prompt('Enter Password',' '); 
+if (password==pass1) 
+alert('Correct Password! Click OK to Enter!'); 
+else { window.location="http://quickonlinetips.com/"; 
 } 
-else { alert("Wrong Username") } 
-} 
-</script>
-<div style="height: 100%; width: 100%; position: fixed; padding-top: 10%; background: white;">    
-<form name="login">
-Username: < input name="id" size="6" type="text">
-Password: < input name="pass" size="6" type="password">
-<input value="Login" onclick="pasuser(this.form)" type="button">
-</form>
-</div>  
+</SCRIPT>
+
+
 
 
 <button class="favorite styled"
