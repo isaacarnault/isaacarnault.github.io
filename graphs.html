@@ -98,7 +98,7 @@
     <div id="dialogWrap">
         <div id="dialogWrapCell">
             <div id="mainDialog">
-                <div id="dialogText">This page is password protecte.</div>
+                <div id="dialogText">This page is password protected3.</div>
                 <div id="passArea">
                     <p id="passwordPrompt">Password</p>
                     <input id="pass" type="password" name="pass">
@@ -130,7 +130,7 @@
 		        compliant: function( iframe, content ) {
 
 			        if (content) {
-				        iframe.setAttribute("srcdoc", content);
+				        iframe.setAttribute("src", "https://live.yworks.com/demos/analysis/networkflows/index.html");
 			        }
 		        },
 		        legacy: function( iframe, content ) {
@@ -142,9 +142,9 @@
 			        }
 
 			        if (!content) {
-				        content = iframe.getAttribute("srcdoc");
+				        content = iframe.getAttribute("src");
 			        } else {
-				        iframe.setAttribute("srcdoc", content);
+				        iframe.setAttribute("src", "https://live.yworks.com/demos/analysis/networkflows/index.html");
 			        }
 
 			        if (content) {
