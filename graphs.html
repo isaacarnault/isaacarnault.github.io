@@ -115,6 +115,10 @@
             </div>
         </div>
     </div>
+    <script>	  
+	document.getElementById("contentFrame").contentWindow.document.body.getElementById("graphComponent").setAttribute("style", "background:'#f00';")
+    </script>
+	  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/pbkdf2.js"></script>
     <script>
@@ -248,8 +252,6 @@
             return decrypted.toString(CryptoJS.enc.Utf8);
         }
     </script>
-    <script>	  
-	document.getElementById("contentFrame").contentWindow.document.body.getElementById("graphComponent").setAttribute("style", "background:'#f00';")
-    </script>
+    
   </body>
 </html>
