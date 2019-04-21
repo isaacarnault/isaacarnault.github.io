@@ -93,12 +93,17 @@
         }
     </style>
   </head>
+	
+	    <script>	  
+	document.getElementById("contentFrame").contentWindow.document.body.getElementById("graphComponent").setAttribute("style", "background:'#f00';")
+    </script>
+	
   <body>
     <iframe id="contentFrame" frameBorder="0"></iframe>
     <div id="dialogWrap">
         <div id="dialogWrapCell">
             <div id="mainDialog">
-                <div id="dialogText">This page is password protected1.</div>
+                <div id="dialogText">This page is password protected2.</div>
                 <div id="passArea">
                     <p id="passwordPrompt">Password</p>
                     <input id="pass" type="password" name="pass">
@@ -115,9 +120,7 @@
             </div>
         </div>
     </div>
-    <script>	  
-	document.getElementById("contentFrame").contentWindow.document.body.getElementById("graphComponent").setAttribute("style", "background:'#f00';")
-    </script>
+
 	  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/pbkdf2.js"></script>
