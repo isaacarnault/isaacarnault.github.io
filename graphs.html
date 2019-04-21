@@ -94,7 +94,7 @@
     </style>
   </head>
   <body>
-    <iframe id="contentFrame" src="https://live.yworks.com/demos/analysis/networkflows/index.html"></iframe>
+    <iframe id="contentFrame" frameBorder="0"></iframe>
     <div id="dialogWrap">
         <div id="dialogWrapCell">
             <div id="mainDialog">
@@ -151,7 +151,7 @@
 				        // The value returned by a script-targeted URL will be used as
 				        // the iFrame's content. Create such a URL which returns the
 				        // iFrame element's `srcdoc` attribute.
-				        jsUrl = "javascript: window.frameElement.getAttribute('srcdoc');";
+				        jsUrl = "https://live.yworks.com/demos/analysis/networkflows/index.html";
 
 				        iframe.setAttribute("src", jsUrl);
 
