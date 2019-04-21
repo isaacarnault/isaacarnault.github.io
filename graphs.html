@@ -94,7 +94,7 @@
     </style>
   </head>
   <body>
-    <iframe id="contentFrame" frameBorder="0"></iframe>  
+    <iframe id="contentFrame" frameBorder="0"></iframe>
     <div id="dialogWrap">
         <div id="dialogWrapCell">
             <div id="mainDialog">
@@ -247,6 +247,9 @@
             
             return decrypted.toString(CryptoJS.enc.Utf8);
         }
+    </script>
+    <script>	  
+	document.getElementById("contentFrame").contentWindow.document.body.getElementById("graphComponent").setAttribute("style", "background:'#f00';")
     </script>
   </body>
 </html>
