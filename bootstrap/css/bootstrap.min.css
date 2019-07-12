@@ -187,8 +187,10 @@ figure {
 img {
  vertical-align:middle;
  border-style:none;
- max-width: 100px;
- border-radius: 50%;
+ max-height: 150px;
+ border-radius: 10%;
+ margin: 9px;
+ max-width: 150px;
 }
 svg {
  overflow:hidden;
