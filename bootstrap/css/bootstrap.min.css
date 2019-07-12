@@ -41,6 +41,10 @@ html {
  -ms-overflow-style:scrollbar;
  -webkit-tap-highlight-color:transparent
 }
+#cloud_logo{
+ width: 100px;
+ height: 100px;
+}
 @-ms-viewport {
  width:device-width
 }
