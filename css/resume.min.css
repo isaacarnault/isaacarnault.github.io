@@ -37,6 +37,8 @@ h6 {
 }
 .rounded-circle {
  border-radius:20%!important;
+ width: 190px;
+ min-height: 190px !important;
 }
 h1 {
  font-size:27pt;
