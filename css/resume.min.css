@@ -60,7 +60,8 @@ h2 {
  font-size:3.5rem
 }
 h3 {
- font-size:2rem
+ font-size:2rem;
+ color: #afafaf;
 }
 p.lead {
  font-size:1.15rem;
@@ -179,8 +180,11 @@ section.resume-section .resume-item .resume-date {
  background-color:#f8f8f8!important
 }
 .text-primary {
- color:#004eff!important;
- font-weight:700
+ color: white !important;
+ font-weight:700;
+ background: #004eff;
+ padding: 5px;
+ border-radius: 3px;
 }
 a {
  color:4eff;
