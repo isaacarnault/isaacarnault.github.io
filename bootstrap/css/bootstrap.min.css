@@ -193,9 +193,10 @@ img {
  vertical-align:middle;
  border-style:none;
  max-height: 150px;
- border-radius: 10%;
+ border-radius: 0.5em;
  margin: 9px;
  max-width: 150px;
+ border: 1px solid #e5e5e5;
 }
 svg {
  overflow:hidden;
