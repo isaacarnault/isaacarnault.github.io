@@ -42,9 +42,9 @@ html {
  -webkit-tap-highlight-color:transparent
 }
 #cloud_logo{
- width: 90px;
- height: 90px;
- border-radius: 50%;
+ width: 80px;
+ height: 80px;
+ border: none;
 }
 @-ms-viewport {
  width:device-width
