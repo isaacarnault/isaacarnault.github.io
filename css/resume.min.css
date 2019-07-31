@@ -36,7 +36,7 @@ h6 {
  color:#343a40
 }
 .rounded-circle {
- border-radius: 50%!important;
+ border-radius: 20% !important;
  width: 190px;
  min-height: 190px !important;
 }
@@ -48,7 +48,7 @@ h1 {
  opacity: 0.5
 }
 #label {
- background:#004eff!important;
+ background:#ffa900 !important;
  font-family:"Lucida Console",sans-serif;
  font-size:10pt;
  font-weight:700;
@@ -182,7 +182,7 @@ section.resume-section .resume-item .resume-date {
 .text-primary {
  color: white !important;
  font-weight:700;
- background: #004eff;
+ background: #fa6500;
  padding: 5px;
  border-radius: 3px;
 }
