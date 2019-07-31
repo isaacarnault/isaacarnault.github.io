@@ -36,25 +36,24 @@ h6 {
  color:#343a40
 }
 .rounded-circle {
- border-radius: 20% !important;
- width: 190px;
- min-height: 190px !important;
+ border-radius: 1em !important;
+ width: 200px;
+ min-height: 200px !important;
 }
 h1 {
- font-size:27pt;
- line-height:5.5rem
+ font-size: 27pt;
+ line-height:5.5rem;
 }
 #label:hover {
  opacity: 0.5
 }
 #label {
- background:#ffa900 !important;
+ background: #264eff !important;
  font-family:"Lucida Console",sans-serif;
  font-size:10pt;
- font-weight:700;
  color:#fff;
  padding:2px 5px;
- border-radius:3px
+ border-radius:3px;
 }
 h2 {
  font-size:3.5rem
@@ -181,8 +180,8 @@ section.resume-section .resume-item .resume-date {
 }
 .text-primary {
  color: white !important;
- font-weight:700;
- background: #fa6500;
+ font-weight: 700;
+ background: #264eff;
  padding: 5px;
  border-radius: 3px;
 }
