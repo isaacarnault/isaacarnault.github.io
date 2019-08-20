@@ -42,7 +42,7 @@ h6 {
  min-height: 200px !important;
 }
 h1 {
- font-size: 27pt;
+ font-size: 24pt;
  line-height:5.5rem;
 }
 #label:hover {
@@ -53,8 +53,11 @@ h1 {
  font-family:"Lucida Console",sans-serif;
  font-size:10pt;
  color:#fff;
- padding:2px 5px;
+ padding:0px 5px;
  border-radius:3px;
+ margin-bottom: 5px;
+ text-align: center;
+ font-weight: bold;
 }
 h2 {
  font-size: 42px;
@@ -183,7 +186,7 @@ section.resume-section .resume-item .resume-date {
  color: white !important;
  font-weight: 700;
  background: #264eff;
- padding: 5px;
+ padding: 6px;
  border-radius: 3px;
 }
 a {
