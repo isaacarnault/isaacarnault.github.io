@@ -71,7 +71,8 @@ h3 {
 p.lead {
  font-size:1.15rem;
  font-weight:400;
- font-family:"Segoe UI",helvetica,sans-serif
+ font-family:"Segoe UI",helvetica,sans-serif;
+ cursor: initial;
 }
 .subheading {
  font-weight:500;
