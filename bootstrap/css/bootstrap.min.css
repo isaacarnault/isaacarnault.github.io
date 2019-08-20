@@ -31,8 +31,7 @@
 *,
 ::after,
 ::before {
- box-sizing:border-box;
- min-width: 120px;
+ box-sizing:border-box
 }
 html {
  font-family:sans-serif;
@@ -191,17 +190,16 @@ figure {
  margin:0 0 1rem
 }
 img {
+ overflow:hidden;
  vertical-align:middle;
- border-style:none;
- max-height: 150px;
- border-radius: 0.5em;
- margin: 9px;
- max-width: 150px;
- border: 1px solid #e5e5e5;
+ height: 100px;
+ width: 100px;
+ border-radius: 50%;
 }
 svg {
  overflow:hidden;
- vertical-align:middle
+ vertical-align:middle;
+ height: ;
 }
 table {
  border-collapse:collapse
