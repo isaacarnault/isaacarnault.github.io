@@ -120,7 +120,8 @@ p.lead {
   -ms-flex-direction:column;
   flex-direction:column;
   width:17rem;
-  height:100vh
+  height:100vh;
+  background: #f8f8f8 !important;
  }
  #sideNav .navbar-brand {
   display:-webkit-box;
