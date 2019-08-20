@@ -199,6 +199,9 @@ img {
  border: 1px solid aliceblue;
  padding: 7px;
 }
+img:hover{
+  opacity: 0.5;
+}
 svg {
  overflow:hidden;
  vertical-align:middle;
