@@ -8,7 +8,7 @@ h5 {
 .fab,
 .fas {
  font-size:27pt!important;
- color: #c7c7c7;
+ color: #dfdfe3;
 }
 #architecture {
  border:1px solid #e5e5e5;
@@ -49,7 +49,7 @@ h1 {
  opacity: 0.5
 }
 #label {
- background: #6268fe !important;
+ background: #ccccd2 !important;
  font-family:"Lucida Console",sans-serif;
  font-size: 12pt;
  color:#fff;
@@ -92,7 +92,7 @@ p.lead {
  margin-right:0
 }
 .social-icons a:hover {
- background-color: #fdde25 !important;
+ background-color: #6268fe !important;
 }
 .dev-icons {
  font-size:3rem
