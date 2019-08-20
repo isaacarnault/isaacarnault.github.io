@@ -8,7 +8,7 @@ h5 {
 .fab,
 .fas {
  font-size:27pt!important;
- color: #cacaca;
+ color: #c7c7c7;
 }
 #architecture {
  border:1px solid #e5e5e5;
@@ -49,7 +49,7 @@ h1 {
  opacity: 0.5
 }
 #label {
- background: #cacaca !important;
+ background: #6268fe !important;
  font-family:"Lucida Console",sans-serif;
  font-size: 12pt;
  color:#fff;
@@ -58,6 +58,8 @@ h1 {
  margin-bottom: 5px;
  text-align: center;
  font-weight: bold;
+ line-height: 25px;
+ display: inline-block;
 }
 h2 {
  font-size: 42px;
@@ -90,7 +92,7 @@ p.lead {
  margin-right:0
 }
 .social-icons a:hover {
- background-color:#004eff
+ background-color: #fdde25 !important;
 }
 .dev-icons {
  font-size:3rem
@@ -185,7 +187,7 @@ section.resume-section .resume-item .resume-date {
 .text-primary {
  color: white !important;
  font-weight: 700;
- background: #cacaca;
+ background: #6268fe;
  padding: 6px;
  border-radius: 3px;
 }
