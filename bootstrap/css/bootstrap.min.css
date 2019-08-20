@@ -95,6 +95,7 @@ p {
  border-bottom:0;
  margin-top: 12px;
  font-size: 17px;
+ cursor: initial;
 }
 abbr[data-original-title],
 abbr[title] {
