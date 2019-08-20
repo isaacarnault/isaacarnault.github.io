@@ -49,9 +49,9 @@ h1 {
  opacity: 0.5
 }
 #label {
- background: #264eff !important;
+ background: #cacaca !important;
  font-family:"Lucida Console",sans-serif;
- font-size:10pt;
+ font-size: 12pt;
  color:#fff;
  padding:0px 5px;
  border-radius:3px;
@@ -120,8 +120,7 @@ p.lead {
   -ms-flex-direction:column;
   flex-direction:column;
   width:17rem;
-  height:100vh;
-  background: #f8f8f8 !important;
+  height:100vh
  }
  #sideNav .navbar-brand {
   display:-webkit-box;
@@ -177,22 +176,22 @@ section.resume-section .resume-item .resume-date {
  section.resume-section {
   padding-top:3rem!important;
   padding-bottom:3rem!important;
-  font-family:helvetica,sans-serif
+  font-family: "Lucida Console",sans-serif;
  }
 }
 .bg-primary {
- background-color: #264eff!important;
+ background-color:#f8f8f8!important
 }
 .text-primary {
  color: white !important;
  font-weight: 700;
- background: #264eff;
+ background: #cacaca;
  padding: 6px;
  border-radius: 3px;
 }
 a {
- color:4eff;
- font-weight:700
+ color: #8c8c8c;
+ font-weight:700;
 }
 a:active,
 a:focus,
