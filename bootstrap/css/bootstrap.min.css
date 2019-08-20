@@ -3723,7 +3723,7 @@ input[type=submit].btn-block {
  text-decoration:none
 }
 .navbar-toggler:not(:disabled):not(.disabled) {
- cursor:pointer
+ cursor:pointer;
 }
 .navbar-toggler-icon {
  display:inline-block;
@@ -3994,8 +3994,8 @@ input[type=submit].btn-block {
  color:#343a40
 }
 .navbar-dark .navbar-toggler {
- color:rgba(255,255,255,.5);
- border-color:rgba(255,255,255,.1)
+ color: rgb(0, 0, 0);
+ border-color: white;
 }
 .navbar-dark .navbar-toggler-icon {
  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
@@ -5677,7 +5677,8 @@ button.bg-dark:hover {
  display:inline-block!important
 }
 .d-block {
- display:block!important
+ display:block!important;
+ font-size: 13pt;
 }
 .d-table {
  display:table!important
