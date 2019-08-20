@@ -31,7 +31,7 @@
 *,
 ::after,
 ::before {
- box-sizing:border-box
+ box-sizing:border-box;
 }
 html {
  font-family:sans-serif;
@@ -192,9 +192,7 @@ figure {
 img {
  overflow:hidden;
  vertical-align:middle;
- height: 100px;
  width: 100px;
- border-radius: 50%;
 }
 svg {
  overflow:hidden;
