@@ -62,7 +62,7 @@ h1 {
  display: inline-block;
 }
 h2 {
- font-size: 42px;
+ /* font-size: 42px; */
 }
 h3 {
  font-size:2rem;
