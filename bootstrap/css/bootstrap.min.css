@@ -90,14 +90,11 @@ h6 {
  margin-bottom:.5rem
 }
 p {
- text-decoration:underline;
- -webkit-text-decoration:underline dotted;
  text-decoration:none;
  cursor:help;
  border-bottom:0;
  margin-top: 12px;
- font-size: 15px;
- text-align: justify;
+ font-size: 17px;
 }
 abbr[data-original-title],
 abbr[title] {
