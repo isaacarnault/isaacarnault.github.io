@@ -32,6 +32,7 @@
 ::after,
 ::before {
  box-sizing:border-box;
+ line-height: 23px;
 }
 #certification_status{
 filter: grayscale(100%);
@@ -107,7 +108,7 @@ p {
  text-decoration:none;
  cursor: initial !important;
  border-bottom:0;
- margin-top: 12px;
+ margin-top: 0;
  font-size: 17px;
 }
 abbr[data-original-title],
