@@ -193,8 +193,9 @@ section.resume-section .resume-item .resume-date {
  border-radius: 3px;
 }
 a {
- color: #8c8c8c;
+ color: blue;
  font-weight:700;
+ font-size: 13pt;
 }
 a:active,
 a:focus,
