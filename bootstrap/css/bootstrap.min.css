@@ -69,7 +69,7 @@ nav,
 section {
  display:block
 }
-#certification_name{
+p#certification_name{
  display: inline-block;
     background: #fd9900;
     color: white;
