@@ -38,7 +38,7 @@ filter: grayscale(100%);
     opacity: 0.1;
 }
 #certification_status:hover{
-    opacity: 0.3;
+    opacity: 0.2;
 }
 html {
  font-family:sans-serif;
