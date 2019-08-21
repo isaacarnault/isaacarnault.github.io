@@ -320,7 +320,8 @@ output {
 summary {
  display:list-item;
  cursor:pointer;
- min-width: 145px;
+ min-width: 168px;
+ margin-left: 4px;
 }
 template {
  display:none
