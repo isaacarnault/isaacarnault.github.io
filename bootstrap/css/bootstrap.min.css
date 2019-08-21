@@ -212,6 +212,8 @@ img {
  vertical-align:middle;
  padding: 6px;
  max-width: 100px;
+ border: 1px solid aliceblue;
+ border-radius: 5px;
 }
 img:hover{
   opacity: 0.5;
