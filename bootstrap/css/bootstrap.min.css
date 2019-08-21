@@ -33,6 +33,13 @@
 ::before {
  box-sizing:border-box;
 }
+#certification_status{
+filter: grayscale(100%);
+    opacity: 0.1;
+}
+#certification_status:hover{
+    opacity: 0.3;
+}
 html {
  font-family:sans-serif;
  line-height:1.15;
