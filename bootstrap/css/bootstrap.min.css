@@ -69,6 +69,14 @@ nav,
 section {
  display:block
 }
+#certification_name{
+ display: inline-block;
+    background: #fd9900;
+    color: white;
+    padding: 0 5px;
+    border-radius: 3px;
+    line-height: 25px;
+}
 body {
  margin:0;
  font-family:roboto, sans-serif;
