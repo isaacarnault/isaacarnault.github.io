@@ -69,14 +69,6 @@ nav,
 section {
  display:block
 }
-p#certification_name{
- display: inline-block;
-    background: #fd9900;
-    color: white;
-    padding: 0 5px;
-    border-radius: 3px;
-    line-height: 25px;
-}
 body {
  margin:0;
  font-family:roboto, sans-serif;
@@ -106,11 +98,10 @@ h6 {
 }
 p {
  text-decoration:none;
- cursor:help;
+ cursor: initial !important;
  border-bottom:0;
  margin-top: 12px;
  font-size: 17px;
- cursor: initial;
 }
 abbr[data-original-title],
 abbr[title] {
