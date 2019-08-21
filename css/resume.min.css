@@ -38,9 +38,8 @@ h6 {
  color: #6f6f6f;
 }
 .rounded-circle {
- border-radius: 1em !important;
- width: 200px;
- min-height: 200px !important;
+ width: initial;
+ max-height: 186px;
 }
 h1 {
  font-size: 24pt;
