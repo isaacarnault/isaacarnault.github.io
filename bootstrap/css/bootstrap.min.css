@@ -41,7 +41,12 @@ filter: grayscale(100%);
     opacity: 0.2;
 }
 #certification_name{
- background: red;
+ background: #6268fe;
+ display: inline-block;
+ border-radius: 3px;
+ line-height: 25px;
+ padding: 0 5px;
+ color: white;
 }
 html {
  font-family:sans-serif;
