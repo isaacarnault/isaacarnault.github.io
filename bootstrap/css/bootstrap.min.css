@@ -40,6 +40,9 @@ filter: grayscale(100%);
 #certification_status:hover{
     opacity: 0.2;
 }
+#certification_name{
+ background: red;
+}
 html {
  font-family:sans-serif;
  line-height:1.15;
