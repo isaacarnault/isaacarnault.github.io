@@ -211,6 +211,7 @@ img {
  overflow:hidden;
  vertical-align:middle;
  padding: 6px;
+ max-width: 100px;
 }
 img:hover{
   opacity: 0.5;
