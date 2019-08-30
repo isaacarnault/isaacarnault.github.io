@@ -193,9 +193,9 @@ section.resume-section .resume-item .resume-date {
  background-color:#f8f8f8!important
 }
 .text-primary {
- color: white !important;
+ color: #264dfe !important;
  font-weight: 700;
- background: #264dfe;
+ background: #f9ff01;
  padding: 6px;
  border-radius: 3px;
 }
