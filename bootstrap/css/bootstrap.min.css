@@ -108,8 +108,9 @@ p {
  text-decoration:none;
  cursor: initial !important;
  border-bottom:0;
- margin-top: 0;
  font-size: 17px;
+ background: #f8f8f8;
+ text-align: center;
 }
 abbr[data-original-title],
 abbr[title] {
