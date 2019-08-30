@@ -31,6 +31,9 @@ h5 {
  line-height: 25px;
  display: flex;
 }
+#gist a{
+ opacity: 0.5;
+}
 em {
  display:none
 }
