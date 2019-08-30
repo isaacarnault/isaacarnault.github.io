@@ -18,11 +18,12 @@ h5 {
  margin:9px
 }
 #gist{
- background: #f9ff01;
+ background: #dfdfe3;
  border-radius: 3px;
- color: #264dfe;
- padding: 0 4px;
+ color: #ffffff !important;
  display: inline-block;
+ margin-right: 3px;
+ padding: 0 4px;
 }
 em {
  display:none
@@ -56,7 +57,7 @@ h1 {
  opacity: 0.5
 }
 #label {
- background: #264dfe !important;
+ background: #dfdfe3 !important;
  font-family:"Lucida Console",sans-serif;
  font-size: 12pt;
  color:#fff;
@@ -193,9 +194,9 @@ section.resume-section .resume-item .resume-date {
  background-color:#f8f8f8!important
 }
 .text-primary {
- color: #264dfe !important;
+ color: #ffffff !important;
  font-weight: 700;
- background: #f9ff01;
+ background: #dfdfe3;
  padding: 6px;
  border-radius: 3px;
 }
