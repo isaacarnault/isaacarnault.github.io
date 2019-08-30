@@ -57,6 +57,11 @@ html {
  -ms-overflow-style:scrollbar;
  -webkit-tap-highlight-color:transparent
 }
+#gist{
+ background: orange;
+ padding: 2px;
+ border-radius: 3px;
+}
 #cloud_logo{
  width: 90px;
  height: 90px;
