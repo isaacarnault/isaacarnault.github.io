@@ -109,6 +109,10 @@ p {
  cursor: initial !important;
  border-bottom:0;
  font-size: 17px;
+ text-align: unset;
+ border: 1px solid aliceblue;
+ padding-left: 5px;
+ border-radius: 3px;
 }
 abbr[data-original-title],
 abbr[title] {
@@ -6766,9 +6770,10 @@ button.bg-dark:hover {
 .mb-0,
 .my-0 {
  margin-bottom:6px !important;
- background: #f8f8f8;
+ background: #264dfe;
  display: inline-block;
- padding: 0 6px;
+ padding: 5px;
+ color: #ffffff;
  border-radius: 3px;
 }
 .ml-0,
