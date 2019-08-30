@@ -3999,7 +3999,7 @@ input[type=submit].btn-block {
  color:#fff
 }
 .navbar-dark .navbar-nav .nav-link {
- color: #ffffff;
+ color: #6f6f6f;
 }
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -4012,7 +4012,7 @@ input[type=submit].btn-block {
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .show>.nav-link {
- color: #f9ff01;
+ color: #264dfe;
 }
 .navbar-dark .navbar-toggler {
  color:rgba(255,255,255,.5);
@@ -6767,13 +6767,10 @@ button.bg-dark:hover {
 .mb-0,
 .my-0 {
  margin-bottom:6px !important;
- background: #264dfe;
+ background: #f8f8f8;
  display: inline-block;
  padding: 0 6px;
  border-radius: 3px;
- color: white;
- font-size: 24px;
- line-height: 30px;
 }
 .ml-0,
 .mx-0 {
@@ -6996,7 +6993,7 @@ button.bg-dark:hover {
 }
 .mr-auto,
 .mx-auto {
- margin-right:auto!important
+ margin-right:auto!important;
 }
 .mb-auto,
 .my-auto {
