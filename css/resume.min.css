@@ -145,12 +145,13 @@ p.lead {
   display:flex;
   -webkit-box-align:start;
   -ms-flex-align:start;
+  background: #264dfe;
   align-items:flex-start;
   -webkit-box-flex:0;
   -ms-flex-positive:0;
   flex-grow:0;
   width:100%;
-  margin-bottom:auto
+  margin-bottom:auto;
  }
  #sideNav .navbar-collapse .navbar-nav {
   -webkit-box-orient:vertical;
@@ -163,8 +164,7 @@ p.lead {
   display:block
  }
  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-  display:block;
-  background: #264dfe;
+  display:block
  }
 }
 section.resume-section {
