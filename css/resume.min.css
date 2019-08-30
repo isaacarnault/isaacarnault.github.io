@@ -163,7 +163,8 @@ p.lead {
   display:block
  }
  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-  display:block
+  display:block;
+  background: #264dfe;
  }
 }
 section.resume-section {
