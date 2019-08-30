@@ -145,7 +145,6 @@ p.lead {
   display:flex;
   -webkit-box-align:start;
   -ms-flex-align:start;
-  background: #264dfe;
   align-items:flex-start;
   -webkit-box-flex:0;
   -ms-flex-positive:0;
