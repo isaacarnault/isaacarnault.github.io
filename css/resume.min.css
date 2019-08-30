@@ -18,11 +18,18 @@ h5 {
  margin:9px
 }
 #gist{
- background: #dfdfe3;
- border-radius: 3px;
  color: #ffffff !important;
  margin-right: 3px;
- padding: 0 4px;
+ background: #dfdfe3 !important;
+ font-family: "Lucida Console",sans-serif;
+ font-size: 12pt;
+ padding: 0px 5px;
+ border-radius: 3px;
+ margin-bottom: 5px;
+ text-align: center;
+ font-weight: bold;
+ line-height: 25px;
+ display: flex;
 }
 em {
  display:none
@@ -59,7 +66,7 @@ h1 {
  background: #dfdfe3 !important;
  font-family:"Lucida Console",sans-serif;
  font-size: 12pt;
- color:#fff;
+ color: #264dfe;
  padding:0px 5px;
  border-radius:3px;
  margin-bottom: 5px;
