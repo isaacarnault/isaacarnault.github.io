@@ -63,10 +63,10 @@ h1 {
  opacity: 0.5
 }
 #label {
- background: #dfdfe3 !important;
+ background: #264dfe !important;
  font-family:"Lucida Console",sans-serif;
  font-size: 12pt;
- color: #264dfe;
+ color: #afafaf;
  padding:0px 5px;
  border-radius:3px;
  margin-bottom: 5px;
