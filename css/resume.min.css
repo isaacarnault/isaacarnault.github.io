@@ -18,9 +18,11 @@ h5 {
  margin:9px
 }
 #gist{
- background: orange;
- padding: 2px;
+ background: #f9ff01;
  border-radius: 3px;
+ color: #264dfe;
+ text-decoration: none;
+ padding: 0 4px;
 }
 em {
  display:none
@@ -54,7 +56,7 @@ h1 {
  opacity: 0.5
 }
 #label {
- background: #ccccd2 !important;
+ background: #264dfe !important;
  font-family:"Lucida Console",sans-serif;
  font-size: 12pt;
  color:#fff;
@@ -198,7 +200,7 @@ section.resume-section .resume-item .resume-date {
  border-radius: 3px;
 }
 a {
- color: #6268fe;
+ color: #264dfe;
  font-weight:700;
 }
 a:active,
