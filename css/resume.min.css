@@ -17,6 +17,11 @@ h5 {
  border-radius:5px;
  margin:9px
 }
+#gist{
+ background: orange;
+ padding: 2px;
+ border-radius: 3px;
+}
 em {
  display:none
 }
