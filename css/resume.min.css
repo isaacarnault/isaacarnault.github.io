@@ -196,7 +196,7 @@ section.resume-section .resume-item .resume-date {
 .text-primary {
  color: white !important;
  font-weight: 700;
- background: #6268fe;
+ background: #264dfe;
  padding: 6px;
  border-radius: 3px;
 }
@@ -209,4 +209,3 @@ a:focus,
 a:hover {
  color: blue;
 }
- 
