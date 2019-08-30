@@ -32,7 +32,7 @@
 ::after,
 ::before {
  box-sizing:border-box;
- line-height: 23px;
+ line-height: 30px;
 }
 #certification_status{
 filter: grayscale(100%);
