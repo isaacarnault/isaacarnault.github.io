@@ -23,6 +23,7 @@ h5 {
  color: #264dfe;
  text-decoration: none;
  padding: 0 4px;
+ display: inline-block;
 }
 em {
  display:none
