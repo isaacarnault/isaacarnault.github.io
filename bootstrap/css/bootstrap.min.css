@@ -6767,10 +6767,11 @@ button.bg-dark:hover {
 .mb-0,
 .my-0 {
  margin-bottom:6px !important;
- background: #f8f8f8;
+ background: #264dfe;
  display: inline-block;
  padding: 0 6px;
- border-radius: 0.5em;
+ border-radius: 3px;
+ color: white;
 }
 .ml-0,
 .mx-0 {
