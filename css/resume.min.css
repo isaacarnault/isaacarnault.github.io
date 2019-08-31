@@ -63,10 +63,10 @@ h1 {
  opacity: 0.5
 }
 #label {
- background: #757575 !important;
+ background: #f8f8f8 !important;
  font-family:"Lucida Console",sans-serif;
  font-size: 12pt;
- color: #989898;
+ color: #c7c7c7;
  padding:0px 5px;
  border-radius:3px;
  margin-bottom: 5px;
@@ -198,9 +198,9 @@ section.resume-section .resume-item .resume-date {
  background-color:#f8f8f8!important
 }
 .text-primary {
- color: #dfdfe3 !important;
+ color: #f8f8f8 !important;
  font-weight: 700;
- background: #ffffff;
+ background: #dfdfe3;
  padding: 6px;
  border-radius: 3px;
 }
