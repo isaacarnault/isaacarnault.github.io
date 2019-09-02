@@ -18,7 +18,6 @@ h5 {
  margin:9px
 }
 #gist{
- color: #ffffff !important;
  margin-right: 3px;
  background: #f8f8f8 !important;
  font-family: "Lucida Console",sans-serif;
@@ -198,9 +197,9 @@ section.resume-section .resume-item .resume-date {
  background-color:#f8f8f8!important
 }
 .text-primary {
- color: #909090;
+ color: #dfdfe3;
  font-weight: 700;
- background: #f8f8f8 !important;
+ background: #ffffff !important;
  padding: 6px;
  border-radius: 3px;
 }
