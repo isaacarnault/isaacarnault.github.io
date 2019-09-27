@@ -52,8 +52,11 @@ h6 {
 }
 .rounded-circle {
  width: initial;
- max-height: 186px;
+ max-height: 147px;
  border-radius: 50%;
+ padding: 8px;
+ background: #fff;
+ border: none;
 }
 h1 {
  font-size: 24pt;
