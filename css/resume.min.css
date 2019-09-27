@@ -19,7 +19,7 @@ h5 {
 }
 #gist{
  margin-right: 3px;
- background: #f8f8f8 !important;
+ background: #c3c3e4 !important;
  font-family: "Lucida Console",sans-serif;
  font-size: 12pt;
  padding: 0px 5px;
@@ -63,7 +63,7 @@ h1 {
  opacity: 0.5
 }
 #label {
- background: #9bc3ff;
+ background: #a0b5d4;
  font-family:"Lucida Console",sans-serif;
  font-size: 12pt;
  color: #ffffff;
@@ -202,18 +202,18 @@ section.resume-section .resume-item .resume-date {
 .text-primary {
  color: #ffffff;
  font-weight: 700;
- background: #ffc977 !important;
+ background: #cbcbff !important;
  padding: 6px;
  border-radius: 3px;
 }
 a {
- color: #a9a9a9;
+ color: #ffffff;
  font-weight:700;
 }
 a:active,
 a:focus,
 a:hover {
- color: blue;
+ color: #e2e2ff;
 }
 .animationStripes{
   width: 300px;
