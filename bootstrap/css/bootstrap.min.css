@@ -61,7 +61,7 @@ html {
  width: 90px;
  height: 90px;
  border: none;
- border-radius: 3px;
+ border-radius: 50%;
 }
 @-ms-viewport {
  width:device-width
