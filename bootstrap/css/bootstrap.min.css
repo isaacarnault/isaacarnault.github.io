@@ -4013,7 +4013,7 @@ input[type=submit].btn-block {
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .show>.nav-link {
- color: #616161;
+ color: #000000;
 }
 .navbar-dark .navbar-toggler {
  color:rgba(255,255,255,.5);
