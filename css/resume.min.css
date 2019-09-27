@@ -19,7 +19,7 @@ h5 {
 }
 #gist{
  margin-right: 3px;
- background: #c3c3e4 !important;
+ background: #f8f8f8 !important;
  font-family: "Lucida Console",sans-serif;
  font-size: 12pt;
  padding: 0px 5px;
@@ -207,13 +207,13 @@ section.resume-section .resume-item .resume-date {
  border-radius: 3px;
 }
 a {
- color: #ffffff;
+ color: #999;
  font-weight:700;
 }
 a:active,
 a:focus,
 a:hover {
- color: #e2e2ff;
+ color: #000000;
 }
 .animationStripes{
   width: 300px;
