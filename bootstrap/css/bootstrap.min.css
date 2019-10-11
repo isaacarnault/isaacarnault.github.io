@@ -42,7 +42,7 @@ filter: grayscale(100%);
     opacity: 0.2;
 }
 #certification_name{
- background: #6268fe;
+ background: #a0b5d4;
  display: inline-block;
  border-radius: 3px;
  line-height: 35px;
@@ -6769,9 +6769,10 @@ button.bg-dark:hover {
 .my-0 {
  margin-bottom:6px !important;
  display: inline-block;
- padding: 5px;
- color: #a9a9a9;
- border-radius: 3px;
+ padding: 5px 7px;
+ color: #a5a5a5;
+ border-radius: 5px;
+ background: #f8f8f8;
 }
 .ml-0,
 .mx-0 {
