@@ -6,6 +6,9 @@ body {
 h5 {
  color: #6268fe !important;
 }
+p#quotes{
+ font-size; 10px;
+}
 .fab,
 .fas {
  font-size:27pt!important;
