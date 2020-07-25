@@ -215,7 +215,7 @@ img {
  overflow:hidden;
  vertical-align:middle;
  padding: 6px;
- max-width: 120px;
+ max-width: 90px;
  border: 1px solid aliceblue;
  border-radius: 5px;
 }
@@ -6998,7 +6998,7 @@ button.bg-dark:hover {
 }
 .mt-auto,
 .my-auto {
- margin-top:auto!important
+ margin-top:auto!important;
 }
 .mr-auto,
 .mx-auto {
