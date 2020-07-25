@@ -42,12 +42,12 @@ filter: grayscale(100%);
     opacity: 0.2;
 }
 #certification_name{
- background: #ff971e;
+ background: #ffd3a0;
  display: inline-block;
  border-radius: 3px;
  line-height: 35px;
  padding: 0 5px;
- color: white;
+ color: #d0a068;
 }
 html {
  font-family:sans-serif;
@@ -343,8 +343,7 @@ summary {
  margin-top: 20px;
  display: inline-flex;
  padding: 4px;
- color: #5bd400;
- background: #cfffc9;
+ background: #f8f8f8;
  min-width: 194px;
 }
 template {
