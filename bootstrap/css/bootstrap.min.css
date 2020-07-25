@@ -57,6 +57,9 @@ html {
  -ms-overflow-style:scrollbar;
  -webkit-tap-highlight-color:transparent
 }
+#course_cert{
+ border: 2px solid green
+}
 #cloud_logo{
  width: 90px;
  height: 90px;
@@ -335,12 +338,14 @@ output {
 }
 summary {
  cursor:pointer;
- min-width: 192px;
  margin-left: 4px;
- border: 2px solid #e8e8e8;
  border-radius: 0.5em;
  margin-top: 20px;
- display: inline-block;
+ display: inline-flex;
+ padding: 4px;
+ color: #5bd400;
+ background: #cfffc9;
+ min-width: 194px;
 }
 template {
  display:none
