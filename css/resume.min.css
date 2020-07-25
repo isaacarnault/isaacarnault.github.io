@@ -11,10 +11,6 @@ p#quotes{
 }
 .fab,
 .fas {
- font-size:27pt!important;
- color: #a0b5d4;
- padding: 4px;
- border-radius: 5px;
 }
 #architecture {
  border:1px solid #e5e5e5;
@@ -102,7 +98,7 @@ h2 {
  /* font-size: 42px; */
 }
 h3 {
- font-size:2rem;
+ font-size: 1.5rem;
  color: #afafaf;
 }
 p.lead {
@@ -124,7 +120,7 @@ p.lead {
  font-size:1.5rem;
  margin-right:1rem;
  display:inline-block;
- padding-top:15px
+ padding-top:15px;
 }
 .social-icons a:last-child {
  margin-right:0
