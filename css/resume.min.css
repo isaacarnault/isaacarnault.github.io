@@ -13,6 +13,9 @@ p#quotes{
 .fas {
  font-size:27pt!important;
  color: #ffffff;
+ background: #5bd400;
+ padding: 4px;
+ border-radius: 5px;
 }
 #architecture {
  border:1px solid #e5e5e5;
