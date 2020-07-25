@@ -6777,9 +6777,9 @@ button.bg-dark:hover {
  margin-bottom:6px !important;
  display: inline-block;
  padding: 5px 7px;
- color: #ffffff;
  border-radius: 5px;
- background: #a0b5d4;
+ border: 2px solid aliceblue;
+ color: #a0b5d4;
 }
 .ml-0,
 .mx-0 {
