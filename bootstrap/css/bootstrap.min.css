@@ -66,6 +66,9 @@ html {
  border: none;
  border-radius: 50%;
 }
+body{
+ min-width: 200px !important;
+}
 @-ms-viewport {
  width:device-width
 }
