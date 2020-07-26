@@ -37,7 +37,11 @@ em {
 @media (min-width:992px) {
  body {
   padding-top:0;
-  padding-left:17rem
+  padding-left:17rem;
+  background-repeat: no-repeat;
+  position: relative;
+  background-image: url(https://www.kindpng.com/picc/m/2-23394_hit-dbs-png-imagenes-de-jiren-dragon-ball.png);
+  background-position-x: 250px;
  }
 }
 h1,
@@ -73,11 +77,11 @@ h1 {
  padding:0px 5px;
  border-radius:3px;
  margin-bottom: 5px;
- margin-top: 6px;
  text-align: center;
  font-weight: bold;
  margin-top: 20px;
  line-height: 25px;
+ margin-right: 4px;
  display: inline-block;
 }
 #label_courses{
@@ -109,6 +113,8 @@ p.lead {
 .subheading {
  font-weight:500;
  font-size:1.5rem;
+ text-indent: 5px;
+ border-radius: 5px;
 }
 .social-icons a {
  height:3.5rem;
