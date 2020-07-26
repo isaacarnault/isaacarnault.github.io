@@ -89,7 +89,7 @@ body {
  color:#212529;
  text-align:left;
  background-color: #ffffff;
- min-width: 200px !important;
+ min-width: 210px !important;
  min-height: 232px !important;
 }
 [tabindex="-1"]:focus {
