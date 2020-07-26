@@ -226,6 +226,7 @@ section.resume-section .resume-item .resume-date {
 a {
  color: #999;
  font-weight:700;
+ text-decoration: underline;
 }
 a:active,
 a:focus,
