@@ -10,7 +10,8 @@ p#quotes{
  font-size: 17px;
 }
 .fab,
-.fas {font-size: 2rem;}
+.fas {
+}
 #architecture {
  border:1px solid #e5e5e5;
  display:inline-block;
@@ -39,9 +40,9 @@ em {
   padding-left:17rem;
   background-repeat: no-repeat;
   position: relative;
-  background-image: url(https://i.pinimg.com/originals/67/18/1c/67181c7121d892fc2c47baf0325248b9.jpg);
-  background-position-y: -10px;
-  background-position-x: 471px;
+  background-image: url(https://i.postimg.cc/d0PCZ810/67181c7121d892fc2c47baf0325248b9.jpg);
+  background-position-y: 4%;
+  background-position-x: 70%;
  }
 }
 h1,
