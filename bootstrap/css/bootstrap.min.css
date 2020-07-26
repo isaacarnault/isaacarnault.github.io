@@ -424,8 +424,7 @@ hr {
  margin-bottom: 30px;
  border:0;
  border-top: 2px dotted;
- border-width: 10px;
- width: 80%;
+ border-width: 2px;
 }
 .small,
 small {
