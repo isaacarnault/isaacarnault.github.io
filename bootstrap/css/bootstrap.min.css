@@ -64,10 +64,7 @@ html {
  width: 90px;
  height: 90px;
  border: none;
- border-radius: 50%;
-}
-body{
- min-width: 200px !important;
+ border-radius: 50%
 }
 @-ms-viewport {
  width:device-width
@@ -92,6 +89,7 @@ body {
  color:#212529;
  text-align:left;
  background-color: #ffffff;
+ min-width: 200px !important;
 }
 [tabindex="-1"]:focus {
  outline:0!important
