@@ -10,8 +10,7 @@ p#quotes{
  font-size: 17px;
 }
 .fab,
-.fas {
-}
+.fas {font-size: 38px;}
 #architecture {
  border:1px solid #e5e5e5;
  display:inline-block;
