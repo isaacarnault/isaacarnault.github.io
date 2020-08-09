@@ -194,6 +194,8 @@ p.lead {
  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
   display:block;
   background: #ffffff;
+  border-radius: 0.5em;
+  margin-bottom: 3px;
  }
 }
 section.resume-section {
