@@ -6776,8 +6776,8 @@ button.bg-dark:hover {
  display: inline-block;
  padding: 5px 7px;
  border-radius: 5px;
- border: 2px solid aliceblue;
- color: #a0b5d4;
+ border: 2px solid #f7f7f7;
+ color: #cccccc;
 }
 .ml-0,
 .mx-0 {
