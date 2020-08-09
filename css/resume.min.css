@@ -10,7 +10,8 @@ p#quotes{
  font-size: 17px;
 }
 .fab,
-.fas {font-size: 36px;}
+.fas {
+}
 #architecture {
  border:1px solid #e5e5e5;
  display:inline-block;
@@ -58,10 +59,10 @@ h6 {
 .rounded-circle {
  width: initial;
  max-height: 157px;
- border-radius: 50%;
- padding: 8px;
- background: #fff;
- border: none;
+ border-radius: 0.5em;
+ background: #cccccc;
+ border: 2px inset white;
+ box-shadow: #0000002e 0px 10px inset;
 }
 h1 {
  font-size: 24pt;
@@ -71,7 +72,7 @@ h1 {
  opacity: 0.5
 }
 #label {
- background: #a0b5d4;
+ background: #cccccc;
  font-size: 12pt;
  color: #ffffff;
  padding:0px 5px;
@@ -81,7 +82,6 @@ h1 {
  font-weight: bold;
  margin-top: 20px;
  line-height: 25px;
- margin-right: 4px;
  display: inline-block;
 }
 #label_courses{
@@ -224,14 +224,13 @@ section.resume-section .resume-item .resume-date {
 .text-primary {
  color: #ffffff;
  font-weight: 700;
- background: #a0b5d4 !important;
+ background: #cccccc !important;
  padding: 6px;
  border-radius: 3px;
 }
 a {
  color: #999;
  font-weight:700;
- text-decoration: underline;
 }
 a:active,
 a:focus,
