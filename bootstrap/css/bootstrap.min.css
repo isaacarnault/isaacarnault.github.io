@@ -58,7 +58,7 @@ html {
  -webkit-tap-highlight-color:transparent
 }
 #course_cert{
- border: 2px solid #5bd400;
+ border: 2px inset;
 }
 #cloud_logo{
  width: 90px;
