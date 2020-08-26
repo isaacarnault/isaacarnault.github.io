@@ -34,6 +34,9 @@
  box-sizing:border-box;
  line-height: 30px;
 }
+body{
+ min-width: 210px !important;
+}
 #certification_status{
 filter: grayscale(100%);
     opacity: 0.1;
