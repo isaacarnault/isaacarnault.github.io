@@ -213,6 +213,12 @@ pre {
 figure {
  margin:0 0 1rem
 }
+#box{
+ border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    max-width: 350px;
+    padding: 4px
+}
 img {
  overflow:hidden;
  vertical-align:middle;
