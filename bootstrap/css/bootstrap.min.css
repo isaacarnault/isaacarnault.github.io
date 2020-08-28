@@ -214,18 +214,21 @@ figure {
  margin:0 0 1rem
 }
 #box{
- border: 1px solid #e5e5e5;
-    border-radius: 5px;
-    max-width: 350px;
-    padding: 4px
+ border: 2px solid aliceblue;
+ border-radius: 5px;
+ max-width: 350px;
+ padding: 4px;
+ margin-top: 2px;
 }
 img {
  overflow:hidden;
  vertical-align:middle;
  padding: 6px;
  border: 2px outset #e5e5e5;
- border-radius: 5px;
- max-height: 90px;
+ border-radius: 50%;
+ height: 90px;
+ margin: 1px;
+ width: 90px;
 }
 img:hover{
   opacity: 0.5;
