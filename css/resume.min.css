@@ -57,10 +57,9 @@ h6 {
 }
 .rounded-circle {
  width: initial;
- max-height: 157px;
- border-radius: 0.5em;
- background: #cccccc;
- border: 2px inset white;
+ max-height: 132px;
+ border-radius: 20%;
+ border: 2px outset #e5e5e5;
 }
 h1 {
  font-size: 24pt;
@@ -219,7 +218,7 @@ section.resume-section .resume-item .resume-date {
  }
 }
 .bg-primary {
- background-color:#f8f8f8!important
+ background-color: #fbfbfb !important;
 }
 .text-primary {
  color: #ffffff;
@@ -280,4 +279,3 @@ a:hover {
     background-position: -70px 0px;
   }
 } 
- 
