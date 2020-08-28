@@ -223,9 +223,9 @@ img {
  overflow:hidden;
  vertical-align:middle;
  padding: 6px;
- max-width: 90px;
  border: 2px outset #e5e5e5;
  border-radius: 5px;
+ max-height: 90px;
 }
 img:hover{
   opacity: 0.5;
@@ -8260,4 +8260,3 @@ a.text-dark:hover {
   border-color:#dee2e6
  }
 } 
- 
