@@ -224,7 +224,7 @@ img {
  overflow:hidden;
  vertical-align:middle;
  padding: 6px;
- border: 2px outset #e5e5e5;
+ border: 2px solid #fdee2c;
  border-radius: 50%;
  height: 90px;
  margin: 1px;
@@ -4014,11 +4014,11 @@ input[type=submit].btn-block {
  color:#fff
 }
 .navbar-dark .navbar-nav .nav-link {
- color: #adabab;
+ color: #3753d0;
 }
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover {
- color: lightgrey;
+ color: black;
 }
 .navbar-dark .navbar-nav .nav-link.disabled {
  color:rgba(255,255,255,.25)
@@ -4027,7 +4027,7 @@ input[type=submit].btn-block {
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .show>.nav-link {
- color: #000000;
+ color: #3753ca;
 }
 .navbar-dark .navbar-toggler {
  color:rgba(255,255,255,.5);
@@ -6783,10 +6783,10 @@ button.bg-dark:hover {
 .my-0 {
  margin-bottom:6px !important;
  display: inline-block;
- padding: 5px 7px;
- border-radius: 5px;
- border: 2px solid #f7f7f7;
- color: #cccccc;
+ padding: 5px 9px;
+ border-radius: 1em;
+ border: 1px solid #e8e8e8;
+ color: #000000;
 }
 .ml-0,
 .mx-0 {
