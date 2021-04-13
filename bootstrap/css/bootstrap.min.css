@@ -224,7 +224,7 @@ img {
  overflow:hidden;
  vertical-align:middle;
  padding: 6px;
- border: 2px solid #fdee2c;
+ border: 2px solid #f5f5f5;
  border-radius: 50%;
  height: 90px;
  margin: 1px;
@@ -6785,8 +6785,8 @@ button.bg-dark:hover {
  display: inline-block;
  padding: 5px 9px;
  border-radius: 1em;
- border: 1px solid #e8e8e8;
- color: #000000;
+ border: 2px solid #f5f5f5;
+ color: #e2e2e2;
 }
 .ml-0,
 .mx-0 {
