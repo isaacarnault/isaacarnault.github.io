@@ -114,11 +114,12 @@ p {
  cursor: initial !important;
  border-bottom:0;
  font-size: 17px;
- text-align: unset;
  padding-left: 5px;
  border-radius: 5px;
  padding: 0 4px;
  color: black;
+ max-width: 450px;
+ text-align: justify;
 }
 abbr[data-original-title],
 abbr[title] {
