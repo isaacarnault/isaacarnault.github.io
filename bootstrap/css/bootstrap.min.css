@@ -116,11 +116,10 @@ p {
  font-size: 17px;
  text-align: unset;
  padding-left: 5px;
- background: #ffffffeb;
+ background: #fffffff2;
  border-radius: 5px;
  padding: 0 4px;
  color: black;
- display: inline-flex;
 }
 abbr[data-original-title],
 abbr[title] {
@@ -162,7 +161,7 @@ dfn {
 }
 b,
 strong {
- font-weight:bolder
+ font-weight:bolder;
 }
 small {
  font-size:80%
