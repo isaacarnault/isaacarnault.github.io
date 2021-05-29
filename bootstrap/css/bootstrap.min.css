@@ -6789,8 +6789,9 @@ button.bg-dark:hover {
  display: inline-block;
  padding: 5px 9px;
  border-radius: 1em;
+ background: #f7f7f7;
  border: 2px solid #f5f5f5;
- color: #e2e2e2;
+ color: #016bfd;
 }
 .ml-0,
 .mx-0 {
@@ -8057,7 +8058,6 @@ button.bg-dark:hover {
   text-align:left!important
  }
  .text-md-right {
-  text-align:right!important
  }
  .text-md-center {
   text-align:center!important
