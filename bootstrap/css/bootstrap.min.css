@@ -116,7 +116,6 @@ p {
  font-size: 17px;
  text-align: unset;
  padding-left: 5px;
- background: #fffffff2;
  border-radius: 5px;
  padding: 0 4px;
  color: black;
@@ -356,7 +355,6 @@ summary {
  border-radius: 0.5em;
  margin-top: 20px;
  padding: 4px;
- background: #ffffff;
  width: 400px;
 }
 template {
