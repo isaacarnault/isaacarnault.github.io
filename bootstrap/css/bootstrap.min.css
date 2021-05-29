@@ -120,6 +120,7 @@ p {
  border-radius: 5px;
  padding: 0 4px;
  color: black;
+ display: inline-flex;
 }
 abbr[data-original-title],
 abbr[title] {
