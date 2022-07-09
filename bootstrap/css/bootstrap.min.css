@@ -57,9 +57,7 @@ html {
  -ms-overflow-style:scrollbar;
  -webkit-tap-highlight-color:transparent
 }
-#course_cert{
- border: 2px inset;
-}
+#course_cert{border: 2px solid #fe4217;}
 #cloud_logo{
  width: 90px;
  height: 90px;
@@ -118,6 +116,7 @@ p {
  border-radius: 5px;
  padding: 0 4px;
  color: black;
+ border: 1px solid black;
  max-width: 450px;
  text-align: justify;
 }
@@ -227,7 +226,6 @@ img {
  overflow:hidden;
  vertical-align:middle;
  padding: 6px;
- border: 2px solid #f5f5f5;
  border-radius: 50%;
  height: 64px;
  margin: 1px;
@@ -4016,7 +4014,7 @@ input[type=submit].btn-block {
  color:#fff
 }
 .navbar-dark .navbar-nav .nav-link {
- color: #ffffff;
+ color: #fe4217;
 }
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -6783,12 +6781,12 @@ button.bg-dark:hover {
 }
 .mb-0,
 .my-0 {
- margin-bottom:6px !important;
  display: inline-block;
- padding: 5px 9px;
- border-radius: 1em;
- border: 2px solid #f5f5f5;
+ border-bottom: 3px solid #f5f5f5;
  color: #fe4217;
+ text-align: center;
+ padding-bottom: 4px;
+ padding-left: 5px;
 }
 .ml-0,
 .mx-0 {
@@ -6889,7 +6887,8 @@ button.bg-dark:hover {
  margin-left:3rem!important
 }
 .p-0 {
- padding:0!important
+ padding:0!important;
+ background: #f5f5f5;
 }
 .pt-0,
 .py-0 {
