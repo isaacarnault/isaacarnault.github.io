@@ -6889,6 +6889,10 @@ button.bg-dark:hover {
 .p-0 {
  padding:0!important;
  background: #f5f5f5;
+ background: url(https://i.postimg.cc/s2mHHgRX/me3-thane-krios-me2-loyal-texture-for-xps-by-just-jasper-d7a9ucm.png);
+ background-repeat: no-repeat;
+ background-position-x: 100px;
+ background-position-y: 100px;
 }
 .pt-0,
 .py-0 {
