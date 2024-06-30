@@ -6,6 +6,9 @@
 
 
 <head>
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+ <script type="text/javascript" src="jqIpLocation.js"></script>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="">
@@ -44,7 +47,7 @@ src="https://imgix.ranker.com/node_img/26/513356/original/aurora-aircraft-airpla
 <div class="container-fluid p-0">
 <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
 <div class="my-auto">
- <div id="IP_Address"></div>
+
 <h1 class="mb-0">Isaac Arnault, PhD</h1>
  <p>EMEA Managing Director - Data, AI, Analytics</p>
  <a target="_blank" href="https://linkedin.com/in/001"><i class="fab fa-linkedin" title="Linkedin"></i></a>   <a target="_blank" href="https://hubia.io/isaac-arnault/"><img title="HUBIA" alt="isaac arnault" src="https://hubia.io/wp-content/uploads/2024/03/hubia_official_logo-150x150.png"></a>
@@ -804,12 +807,15 @@ o.parentNode.insertBefore(s, o);
 </script>
 
  <script>
-  $.getJSON("http://ip-api.com/json/?callback=?", function (data) {
-    console.log(data);
-    $('#IP_Address').append("Your IP: " + data.query);
-    $('#Country').append("Your Country: " + data.country);
-    $('#City').append("Your City: " + data.city);
-});
+  $.jqIpLocation({
+     ip : '208.80.152.201',
+     success: function(location) {	          
+        // location.country;
+        // location.countryCode;
+        // location.city;
+        ...
+     }
+   });
  </script>
  
 <!-- Bootstrap core JavaScript -->
@@ -819,8 +825,7 @@ o.parentNode.insertBefore(s, o);
 <script src="jquery-easing/jquery.easing.min.js"></script>
 <!-- Custom scripts for this template -->
 <script src="js/resume.min.js"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
+ 
 </body>
 
 </html>
