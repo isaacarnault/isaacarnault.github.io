@@ -1,1 +1,450 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dr. Isaac Arnault — Portfolio</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link rel="stylesheet" href="css/resume.min.css"></head><body><nav class="bg-primary" id="sideNav"><a class="navbar-brand" href="#page-top"><span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle" src="img/profile.jpg" alt="Isaac Arnault"></span></a><div class="collapse navbar-collapse"><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="#about">À propos</a></li><li class="nav-item"><a class="nav-link" href="#experience">Expérience</a></li><li class="nav-item"><a class="nav-link" href="#education">Formation</a></li><li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li></ul></div></nav><main class="container-fluid p-0"><section class="resume-section" id="about"><div><h1>Isaac <span class="text-primary">Arnault, PhD</span></h1><p class="lead">Chercheur &amp; Ingénierie de données</p><div id="gist">Expertise en architectures complexes et modélisation.</div><div class="social-icons"><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a> <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a></div></div></section></main></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Isaac Arnault, PhD — Data · AI · Architecture</title>
+  
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;0,800;1,400&family=Saira+Extra+Condensed:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --blue: #002593;
+      --blue-2: #1e2cff;
+      --ink: #111827;
+      --muted: #667085;
+      --line: #e5e7eb;
+      --soft: #f6f8fc;
+      --accent: #a6bcff;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      padding: 0 !important;
+      margin: 0;
+      background: #fff;
+      color: var(--ink);
+      font-family: 'Muli', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+    }
+
+    body::before {
+      content: "";
+      display: block;
+      height: 4px;
+      background: repeating-linear-gradient(-45deg, #000 0, #000 25px, #00f 25px, #00f 50px);
+      background-size: 140px 100%;
+      animation: progress 2s linear infinite;
+    }
+
+    @keyframes progress {
+      0% { background-position: 0 0; }
+      100% { background-position: -70px 0; }
+    }
+
+    /* Site Header */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.97);
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 3px 18px rgba(15, 23, 42, 0.06);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      max-width: 1180px;
+      margin: auto;
+      min-height: 76px;
+      padding: 10px 22px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      text-decoration: none !important;
+      color: var(--ink) !important;
+      background: transparent !important;
+      min-width: 205px;
+    }
+
+    .brand img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--blue);
+    }
+
+    .brand strong {
+      display: block;
+      font-size: 1rem;
+      line-height: 1.1;
+    }
+
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-size: 0.68rem;
+      margin-top: 3px;
+      letter-spacing: 0.03em;
+    }
+
+    .main-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      flex: 1;
+    }
+
+    .main-nav a {
+      color: var(--ink) !important;
+      background: transparent !important;
+      text-decoration: none;
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.045em;
+      padding: 9px 10px;
+      border-radius: 7px;
+      transition: all 0.2s;
+    }
+
+    .main-nav a:hover {
+      background: #eef3ff !important;
+      color: var(--blue) !important;
+    }
+
+    .header-links {
+      display: flex;
+      gap: 7px;
+    }
+
+    .header-links a {
+      color: #fff !important;
+      background: var(--blue) !important;
+      border-radius: 6px;
+      padding: 7px 11px;
+      font-size: 0.72rem;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .header-links a:hover {
+      background: var(--blue-2) !important;
+    }
+
+    /* Main Grid Layout */
+    .site-main {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .content-grid {
+      padding: 34px 28px 70px !important;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    section.resume-section {
+      box-sizing: border-box;
+      min-width: 0 !important;
+      max-width: none !important;
+      margin: 0 !important;
+      padding: 30px !important;
+      background: #fff;
+      border: 1px solid var(--line) !important;
+      border-radius: 14px;
+      box-shadow: 0 8px 28px rgba(15, 23, 42, 0.045);
+      overflow: hidden;
+    }
+
+    section#about {
+      grid-column: 1 / -1;
+      background: linear-gradient(135deg, #fff 0%, #f7f9ff 100%);
+      padding: 42px !important;
+    }
+
+    section#scripting, section#interests, section#certifications {
+      grid-column: 1 / -1;
+    }
+
+    section#education, section#skills {
+      min-height: 260px;
+    }
+
+    /* Typography */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Saira Extra Condensed", sans-serif;
+      font-weight: 700 !important;
+      color: var(--blue) !important;
+      border: 0 !important;
+      border-radius: 0 !important;
+      padding: 0 !important;
+      max-width: none !important;
+      letter-spacing: 0.01em;
+    }
+
+    h1 {
+      font-size: 3.5rem !important;
+      line-height: 1 !important;
+      margin: 0 0 18px !important;
+    }
+
+    h2 {
+      font-size: 2rem !important;
+      border-bottom: 3px solid var(--accent) !important;
+      padding-bottom: 8px !important;
+      margin-bottom: 25px !important;
+    }
+
+    h3 {
+      font-size: 1.55rem !important;
+      margin-top: 25px !important;
+      border-left: 5px solid var(--blue) !important;
+      padding-left: 12px !important;
+    }
+
+    /* Badges & Elements */
+    .badge-custom {
+      font-size: 0.75rem !important;
+      line-height: 1.5 !important;
+      text-align: center;
+      font-weight: 800;
+      color: var(--blue) !important;
+      background: #eef3ff !important;
+      border: 1px solid #dce5ff;
+      border-radius: 999px !important;
+      padding: 4px 9px !important;
+      margin: 0 4px 5px 0 !important;
+      display: inline-block;
+    }
+
+    .gist-link {
+      font-size: 0.78rem !important;
+      line-height: 1.4 !important;
+      margin: 7px 4px !important;
+      padding: 6px 11px !important;
+      text-align: center;
+      font-weight: 800;
+      background: var(--accent) !important;
+      border-radius: 6px !important;
+      display: inline-block;
+    }
+
+    .gist-link a {
+      color: #06145e !important;
+      text-decoration: none;
+    }
+
+    .box-flex {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .box-flex img {
+      max-width: 105px;
+      max-height: 105px;
+      object-fit: contain;
+      border-radius: 7px;
+    }
+
+    .listing {
+      background: var(--soft);
+      border-left: 4px solid var(--blue);
+      padding: 18px 20px;
+      border-radius: 8px;
+    }
+
+    .animationStripes {
+      width: 100% !important;
+      height: 36px !important;
+      margin-top: 25px;
+      background-image: repeating-linear-gradient(-45deg, #000, #000 25px, #00f 25px, #00f 50px);
+      background-size: 150% 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .header-inner { flex-wrap: wrap; gap: 8px; }
+      .main-nav { order: 3; flex-basis: 100%; overflow-x: auto; justify-content: flex-start; }
+      .header-links { margin-left: auto; }
+      .content-grid { grid-template-columns: 1fr; padding: 22px 14px 45px !important; }
+      section#about, section#certifications, section#interests, section#scripting { grid-column: auto; }
+      h1 { font-size: 2.7rem !important; }
+    }
+  </style>
+</head>
+<body id="page-top">
+
+  <!-- Header / Navbar Top -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#page-top" class="brand" aria-label="Isaac Arnault home">
+        <img alt="Isaac Arnault" src="https://i.postimg.cc/52RPG6tr/isaac-arnault.jpg">
+        <span>
+          <strong>Isaac Arnault</strong>
+          <small>PhD · Data · AI · Architecture</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#scripting">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+      </nav>
+      <div class="header-links">
+        <a href="https://github.com/isaacarnault" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://isaacarnault.github.io/" target="_blank" rel="noopener">Profile</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="site-main">
+    <div class="container-fluid content-grid">
+      
+      <!-- ABOUT SECTION -->
+      <section class="resume-section" id="about">
+        <div>
+          <h1>Isaac Arnault, PhD</h1>
+          <a href="https://postimg.cc/34RpLcBt" target="_blank">
+            <img alt="isaac arnault consulting expertise" src="https://i.postimg.cc/hj8rGF7R/isaac-arnault-expertise.png" class="img-fluid mb-3">
+          </a>
+          <p class="lead">
+            Ex-tech entrepreneur<br>
+            Multi-certified in Big Data & Artificial Intelligence<br>
+            Currently : Head of Data at global firm in the textile industry
+          </p>
+          <hr>
+          <p>
+            <img alt="path" src="https://clipart-library.com/8300/2368/road.png" style="width:60px; border-radius:0.5em; vertical-align:middle;" class="me-2">
+            <strong>Two certification paths followed sequentially :</strong>
+          </p>
+          <ul>
+            <li><b>Certified from 2018 to 2024</b> in Big Data & Artificial Intelligence</li>
+            <li><b>Certified from 2024 onwards</b> by the International Monetary Fund's Institute (Washington, DC) in Public Finances</li>
+          </ul>
+
+          <div class="gist-link">Public Finances - Certifications</div>
+          <div class="box-flex my-2">
+            <a href="https://i.postimg.cc/WzN6tv3J/isaac-arnault-IMF-1.jpg" target="_blank"><img alt="imf1" src="https://i.postimg.cc/WzN6tv3J/isaac-arnault-IMF-1.jpg"></a>
+            <a href="https://i.postimg.cc/wTTYYR6j/isaac-arnault-imf-6.jpg" target="_blank"><img alt="imf6" src="https://i.postimg.cc/wTTYYR6j/isaac-arnault-imf-6.jpg"></a>
+            <a href="https://i.postimg.cc/66VBXNn4/isaac-arnault-imf-5.jpg" target="_blank"><img alt="imf5" src="https://i.postimg.cc/66VBXNn4/isaac-arnault-imf-5.jpg"></a>
+            <a href="https://i.postimg.cc/s28gv9g0/isaac-arnault-IMF-4.jpg" target="_blank"><img alt="imf4" src="https://i.postimg.cc/s28gv9g0/isaac-arnault-IMF-4.jpg"></a>
+            <a href="https://i.postimg.cc/yNrk0Cvy/isaac-arnault-imf3.jpg" target="_blank"><img alt="imf3" src="https://i.postimg.cc/yNrk0Cvy/isaac-arnault-imf3.jpg"></a>
+            <a href="https://i.postimg.cc/pLJjhSws/isaac-arnault-IMF-2.jpg" target="_blank"><img alt="imf2" src="https://i.postimg.cc/pLJjhSws/isaac-arnault-IMF-2.jpg"></a>
+          </div>
+
+          <div class="mt-4">
+            <p class="fst-italic h5 text-primary">"Hic et ubique terrarum"</p>
+            <div class="listing mt-2">
+              <strong>Career Milestone</strong><br>
+              Lead Data Architect on a 4BN € program for a major finance institution in 2021
+              <ul class="mt-2 mb-0">
+                <li>500 Ab Initio ETL flows assessed and optimized for Solution Performance</li>
+                <li>MLOps models applied for Anomaly Detection, Alerting and Corrective Actions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS / SCRIPTING SECTION -->
+      <section class="resume-section" id="scripting">
+        <h2>Projects & Scripting</h2>
+        
+        <h3>Job interviews preparation</h3>
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <strong>11.25.2022</strong> <span class="badge-custom">Project Management</span><br>
+            ⇨ Project Management cheat-sheet for a job interview / Client facing<br>
+            <span class="gist-link"><a href="https://gist.github.com/isaacarnault/5e4bdfa50b15da0aa62f46665276089a" target="_blank">Gist</a></span>
+          </li>
+          <li class="mb-3">
+            <strong>07.11.2022</strong> <span class="badge-custom">Elastic</span><br>
+            ⇨ Elasticsearch cheat-sheet for a job interview / Client facing<br>
+            <span class="gist-link"><a href="https://gist.github.com/isaacarnault/ca754e61d10141954a6cb18ae90681d0" target="_blank">Gist</a></span>
+          </li>
+        </ul>
+
+        <h3>Scripting & Infrastructure</h3>
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <strong>03.08.2024</strong> <span class="badge-custom">SAP S/4HANA</span><br>
+            ⇨ Deploy SAP S/4HANA Public Cloud Edition and an RDS (SQL Server) DB on AWS using Terraform (Infrastructure as Code)<br>
+            <span class="gist-link"><a href="https://gist.github.com/isaacarnault/645bc5f42e8cfd3a7bb6a85aa252fb31" target="_blank">Gist</a></span>
+            <span class="gist-link"><a href="https://github.com/isaacarnault/SAP-S-4HANA/tree/main" target="_blank">Repository</a></span>
+          </li>
+          <li class="mb-3">
+            <strong>04.26.2024</strong> <span class="badge-custom">Cloud (Terraform series)</span><br>
+            ⇨ Deploy a 3 Databricks nodes cluster using Terraform (IaC) on Azure<br>
+            <span class="gist-link"><a href="https://gist.github.com/isaacarnault/948cef229bdab5837911159413bded2d" target="_blank">Gist</a></span>
+            <span class="gist-link"><a href="https://github.com/isaacarnault/databricks-terraform-azure/tree/main" target="_blank">Repository</a></span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- EDUCATION SECTION -->
+      <section class="resume-section" id="education">
+        <h2><i class="fas fa-desktop me-2"></i> Education</h2>
+        <p>Courses, certifications and academic path details.</p>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section class="resume-section" id="skills">
+        <h2><i class="fas fa-vial me-2"></i> Skills</h2>
+        <div class="listing mb-3">
+          <strong>Databases:</strong> SQL Server, PostgreSQL, MySQL, Oracle, BigQuery, Hive, Azure SQL, DynamoDB, MongoDB, Qdrant, Milvus.
+        </div>
+        <div class="listing">
+          <strong>Data Engineering:</strong> Ab Initio, Dataflow, Snowflake, Databricks, PySpark, Scala, Airflow, Kafka, Delta Lakes.
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS SECTION -->
+      <section class="resume-section" id="certifications">
+        <h2>Certifications</h2>
+        <h4>Professional Certification - Big Data & Artificial Intelligence</h4>
+        <div class="box-flex my-3">
+          <a href="https://postimg.cc/G4gW4YS8" target="_blank"><img alt="isaac-arnault-hortonworks" src="https://i.postimg.cc/bvqpF9xT/isaac-arnault-certification.png"></a>
+          <a href="https://postimg.cc/fVb4W55Q" target="_blank"><img alt="isaac-arnault-notes" src="https://i.postimg.cc/kgQ7cpbG/isaac-arnault-notes.jpg"></a>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Footer Banner -->
+    <div class="animationStripes">
+      Isaac Arnault x github.io © 2026
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
