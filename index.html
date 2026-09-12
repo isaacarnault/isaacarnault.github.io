@@ -50,7 +50,7 @@
       100% { background-position: -70px 0; }
     }
 
-    /* Site Header */
+    /* Header Stick Navigation */
     .site-header {
       position: sticky;
       top: 0;
@@ -176,8 +176,8 @@
 
     section#about {
       grid-column: 1 / -1;
-      background: linear-gradient(135deg, #fff 0%, #f7f9ff 100%);
-      padding: 42px !important;
+      padding: 0 !important;
+      background: #fff;
     }
 
     section#scripting, section#interests, section#certifications {
@@ -186,6 +186,29 @@
 
     section#education, section#skills {
       min-height: 260px;
+    }
+
+    /* Banner style pour l'image d'expertise */
+    .expertise-banner {
+      position: relative;
+      height: 180px;
+      background-image: url('https://i.postimg.cc/hj8rGF7R/isaac-arnault-expertise.png');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .banner-overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(180deg, rgba(0, 37, 147, 0.45) 0%, rgba(17, 24, 39, 0.88) 100%);
+    }
+
+    .banner-content {
+      position: relative;
+      z-index: 2;
+      padding: 24px 32px;
     }
 
     /* Typography */
@@ -201,9 +224,9 @@
     }
 
     h1 {
-      font-size: 3.5rem !important;
+      font-size: 3.2rem !important;
       line-height: 1 !important;
-      margin: 0 0 18px !important;
+      margin: 0 0 6px !important;
     }
 
     h2 {
@@ -295,7 +318,9 @@
       .header-links { margin-left: auto; }
       .content-grid { grid-template-columns: 1fr; padding: 22px 14px 45px !important; }
       section#about, section#certifications, section#interests, section#scripting { grid-column: auto; }
-      h1 { font-size: 2.7rem !important; }
+      h1 { font-size: 2.5rem !important; }
+      .expertise-banner { height: 160px; }
+      .banner-content { padding: 18px 20px; }
     }
   </style>
 </head>
@@ -331,19 +356,30 @@
       
       <!-- ABOUT SECTION -->
       <section class="resume-section" id="about">
-        <div>
-          <h1>Isaac Arnault, PhD</h1>
-          <a href="https://postimg.cc/34RpLcBt" target="_blank">
-            <img alt="isaac arnault consulting expertise" src="https://i.postimg.cc/hj8rGF7R/isaac-arnault-expertise.png" class="img-fluid mb-3">
-          </a>
+        <!-- Hero Banner avec l'image intégrée -->
+        <div class="expertise-banner">
+          <div class="banner-overlay"></div>
+          <div class="banner-content">
+            <span class="badge bg-warning text-dark mb-2 font-monospace">EXPERTISE SCOPE</span>
+            <h1 class="text-white">Isaac Arnault, PhD</h1>
+            <p class="text-white-50 m-0">Data Architecture · Analytics · Artificial Intelligence</p>
+          </div>
+        </div>
+
+        <div class="p-4">
           <p class="lead">
             Ex-tech entrepreneur<br>
             Multi-certified in Big Data & Artificial Intelligence<br>
             Currently : Head of Data at global firm in the textile industry
           </p>
-          <hr>
+
+          <button class="btn btn-sm btn-outline-primary mb-3" data-bs-toggle="modal" data-bs-target="#expertiseModal">
+            <i class="fas fa-expand me-1"></i> Afficher la cartographie d'expertise complète
+          </button>
+
+          <hr class="my-3">
           <p>
-            <img alt="path" src="https://clipart-library.com/8300/2368/road.png" style="width:60px; border-radius:0.5em; vertical-align:middle;" class="me-2">
+            <img alt="path" src="https://clipart-library.com/8300/2368/road.png" style="width:50px; border-radius:0.5em; vertical-align:middle;" class="me-2">
             <strong>Two certification paths followed sequentially :</strong>
           </p>
           <ul>
@@ -444,6 +480,21 @@
       Isaac Arnault x github.io © 2026
     </div>
   </main>
+
+  <!-- Modal pour afficher l'image d'expertise grand format -->
+  <div class="modal fade" id="expertiseModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Expertise Domains & Technical Scope</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center bg-light">
+          <img src="https://i.postimg.cc/hj8rGF7R/isaac-arnault-expertise.png" class="img-fluid rounded shadow" alt="Expertise Domains">
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
