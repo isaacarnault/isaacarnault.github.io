@@ -1,1 +1,401 @@
-#gist,#label_courses,body,h3,p.lead{color:#000}#gist,#label,#label_courses{font-size:12pt;margin-bottom:5px}#architecture,#gist,#label,#label_courses,.social-icons a,p.lead{display:inline-block}#label,#label_courses{line-height:25px;text-align:center}body{padding-top:54px}h5{color:#6268fe!important}p#quotes{font-size:17px;border-radius:5px;padding:0 7px}.fab,.fas{font-size:21px;color:#1e2cff;margin:0 4px;border:3px solid;padding:6px;border-radius:4px}#architecture{border:1px solid #e5e5e5;border-radius:5px;margin:9px}#gist{margin-right:3px;padding:2px 12px;margin-top:16px;text-align:center;max-width:495px;min-width:unset!important;font-weight:700;background-color:#a6bcff;line-height:20px}em{display:none}h1,h2,h3,h4,h5,h6{font-weight:300;border-radius:1em;border:3px inset #c9c9c9;padding:4px 18px;max-width:474px}#label,#label_courses,.subheading,.text-primary,a{font-weight:700}.rounded-circle{max-height:150px;border:none;padding:0;width:150px;border-radius:50%}#label,p.lead{border-radius:1em}h1{font-size:24pt;line-height:3.5rem}#label:hover{opacity:.5}#label{background:#f3f3f3;color:#b9b9b9;padding:0 7px;margin-top:20px}#label_courses{background:#002593;padding:4px 8px;margin-top:6px;color:#e3e3e3}h3{font-size:1.6rem;text-indent:7px;text-transform:none}p.lead{font-size:1.15rem;font-weight:400;font-family:"Segoe UI",helvetica,sans-serif;cursor:initial;padding:1px 9px}.subheading{font-size:1.5rem;text-indent:5px;border-radius:5px;color:#1e2cff}.social-icons a{background-color:#d2d9e3;border-radius:100%;text-align:center;width:50px;margin-right:10px;padding-top:14px;height:50px}.social-icons a:last-child{margin-right:0}.social-icons a:hover{background-color:#4478a7!important}.dev-icons{font-size:3rem}.dev-icons .list-inline-item i:hover{color:#9bc3ff}#sideNav .navbar-nav .nav-item .nav-link{font-weight:800;letter-spacing:.05rem;text-transform:uppercase}#sideNav .navbar-toggler:focus{outline-color:#d48a6e}section.resume-section{padding-bottom:5rem!important;max-width:75rem;min-width:490px}section.resume-section .resume-item .resume-date{min-width:none}@media (min-width:768px){section.resume-section .resume-item .resume-date{min-width:18rem}}@media (min-width:992px){body{padding-top:0;padding-left:17rem}#sideNav,#sideNav .navbar-brand{display:-webkit-box;display:-ms-flexbox}#sideNav,#sideNav .navbar-collapse .navbar-nav{-webkit-box-orient:vertical;-webkit-box-direction:normal}#sideNav{text-align:center;position:fixed;left:0;display:flex;-ms-flex-direction:column;flex-direction:column;width:17rem;height:100vh}#sideNav .navbar-brand{display:flex;margin:auto auto 0;padding:.5rem}#sideNav .navbar-collapse{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:start;margin-top:20px;-ms-flex-align:start;align-items:flex-start;-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;width:100%;margin-bottom:auto}#sideNav .navbar-collapse .navbar-nav{-ms-flex-direction:column;flex-direction:column;width:100%;background:#f3f3f3;line-height:15px!important}#sideNav .navbar-collapse .navbar-nav .nav-item{display:block}#sideNav .navbar-collapse .navbar-nav .nav-item .nav-link{display:block;border-radius:1em;margin-bottom:3px;max-width:169px;background:#def7ff;margin-left:auto;margin-right:auto}section.resume-section{max-width:900px;margin-left:11px;border:2px solid #f0f8ff;padding-bottom:10px!important}}.bg-primary{background:#002593!important;border-right:7px solid #aeb2ef}.text-primary{color:#afafaf;padding:6px;border-radius:3px}a{color:#fff;background:0 0!important}a:active,a:focus,a:hover{color:#ebebeb}.animationStripes{width:300px;height:50px;background-image:repeating-linear-gradient(-45deg,#000,#000 25px,#00f 25px,#00f 50px);-webkit-animation:2s linear infinite progress;-moz-animation:2s linear infinite progress;-ms-animation:progress 2s linear infinite;animation:2s linear infinite progress;background-size:150% 100%}@-webkit-keyframes progress{0%{background-position:0 0}100%{background-position:-75px 0}}@-moz-keyframes progress{0%{background-position:0 0}100%{background-position:-75px 0}}@-ms-keyframes progress{0%{background-position:0 0}100%{background-position:-75px 0}}@keyframes progress{0%{background-position:0 0}100%{background-position:-70px 0}}
+/* ==========================================================================
+   Isaac Arnault — resume.min.css
+   Custom stylesheet (drop-in replacement). Bootstrap.min.css stays untouched.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root{
+  --ink:        #101B24;
+  --ink-soft:   #5B6670;
+  --paper:      #F5F4F0;
+  --paper-2:    #EDEBE4;
+  --line:       #D8D4C9;
+  --accent:     #2E6E62;
+  --accent-2:   #B5562A;
+  --card:       #FFFFFF;
+  --font-body:  'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono:  'IBM Plex Mono', SFMono-Regular, Menlo, monospace;
+}
+
+/* ---- base ---------------------------------------------------------- */
+
+html{ scroll-behavior:smooth; }
+
+body{
+  font-family:var(--font-body);
+  font-size:16px;
+  line-height:1.6 !important;
+  color:var(--ink);
+  background:var(--paper);
+}
+
+*,::after,::before{ margin-top:0; line-height:inherit !important; }
+
+p{
+  color:var(--ink);
+  line-height:1.7 !important;
+  cursor:auto !important;
+  max-width:70ch;
+}
+
+a{
+  color:var(--accent) !important;
+  background:none !important;
+  text-decoration:none;
+  transition:color .15s ease;
+}
+a:hover,a:focus{ color:var(--accent-2) !important; }
+
+::selection{ background:var(--accent); color:#fff; }
+
+:focus-visible{ outline:2px solid var(--accent-2); outline-offset:2px; }
+
+hr{ border:0; border-top:1px solid var(--line) !important; }
+
+/* ---- headings -------------------------------------------------------
+   Undo the old boxed/inset border treatment; use a quiet left rule
+   that marks section starts without turning every heading into a card. */
+
+h1,h2,h3,h4,h5,h6{
+  font-family:var(--font-body);
+  font-weight:600;
+  border:none !important;
+  border-radius:0 !important;
+  max-width:none !important;
+  padding:0 0 0 14px !important;
+  border-left:3px solid var(--accent) !important;
+  color:var(--ink);
+}
+
+h1{ font-size:2rem; line-height:1.25 !important; letter-spacing:-.01em; }
+h2{ font-size:1.5rem; }
+h3{ font-size:1.2rem; text-indent:0 !important; text-transform:none; }
+h4{ font-size:1.05rem; }
+h5{ font-size:.95rem; color:var(--ink) !important; }
+h6{ font-size:.85rem; color:var(--ink-soft); }
+
+.subheading{
+  font-family:var(--font-mono);
+  font-size:1.05rem;
+  text-indent:0 !important;
+  border-left:none !important;
+  padding-left:0 !important;
+  color:var(--accent);
+  font-style:italic;
+  border-radius:0;
+}
+
+p.lead{
+  font-family:var(--font-body);
+  font-size:1.1rem;
+  font-weight:400;
+  color:var(--ink-soft);
+  padding:0 !important;
+  border-radius:0;
+}
+
+/* ---- sidebar ---------------------------------------------------------- */
+
+.bg-primary{
+  background:var(--ink) !important;
+  border-right:none !important;
+}
+
+#sideNav .navbar-brand{
+  padding:2.5rem 1.5rem 1.5rem;
+}
+
+.rounded-circle{
+  width:140px !important;
+  height:140px !important;
+  max-height:140px;
+  border:3px solid var(--paper) !important;
+  box-shadow:0 0 0 2px var(--accent);
+  object-fit:cover;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link{
+  font-family:var(--font-mono);
+  font-weight:500;
+  font-size:.8rem;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.65) !important;
+}
+
+@media (min-width:992px){
+  #sideNav .navbar-collapse .navbar-nav{
+    background:rgba(255,255,255,.04) !important;
+    line-height:1.6 !important;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link{
+    background:transparent !important;
+    border-radius:2px;
+    max-width:none;
+    text-align:left;
+    padding:.5rem 1rem !important;
+    border-left:2px solid transparent;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link:hover{
+    color:#fff !important;
+    border-left-color:var(--accent-2);
+    background:rgba(255,255,255,.06) !important;
+  }
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active{
+  background:rgba(46,110,98,.35) !important;
+  color:#fff !important;
+}
+
+/* ---- section shell ----------------------------------------------------- */
+
+section.resume-section{
+  max-width:820px;
+  background:var(--card);
+  border:1px solid var(--line) !important;
+  border-radius:6px;
+  padding-top:2.5rem !important;
+  padding-bottom:2.5rem !important;
+}
+
+/* ---- content blocks: career milestones / skill groups ----------------- */
+
+.intro{
+  display:block;
+  line-height:1.7 !important;
+  border:none;
+  border-top:1px solid var(--line);
+  padding:16px 0 0 !important;
+  margin:20px 0 0 !important;
+  max-width:none;
+}
+.intro b{
+  font-family:var(--font-mono);
+  font-size:.78rem;
+  letter-spacing:.03em;
+  text-transform:uppercase;
+  color:var(--accent);
+  background:none !important;
+}
+
+.listing{
+  font-size:15px;
+  line-height:1.7 !important;
+  padding-left:0;
+  border-radius:0;
+  margin:8px 0 0;
+  max-width:70ch;
+  color:var(--ink-soft);
+}
+.listing li{ margin-bottom:4px; }
+
+/* ---- gist / repo tags --------------------------------------------------- */
+
+#gist{
+  display:inline-block;
+  font-family:var(--font-mono);
+  font-weight:500;
+  font-size:.8rem;
+  text-align:left;
+  max-width:none;
+  min-width:unset !important;
+  line-height:1.4 !important;
+  background:var(--paper-2) !important;
+  color:var(--ink) !important;
+  border-radius:4px;
+  padding:3px 10px;
+  margin:4px 6px 4px 0;
+}
+#gist a{ color:var(--accent) !important; font-weight:600; }
+
+/* small labels used for job-interview / scripting entries */
+
+#label{
+  display:inline-block;
+  font-family:var(--font-mono);
+  font-size:.75rem;
+  font-weight:500;
+  border-radius:3px;
+  background:var(--paper-2);
+  color:var(--ink-soft);
+  padding:2px 8px;
+  margin-top:0;
+}
+#label:hover{ opacity:1; background:var(--accent); color:#fff; }
+
+#label_courses{
+  display:inline-block;
+  font-family:var(--font-mono);
+  font-size:.85rem;
+  font-weight:600;
+  background:var(--ink);
+  color:#fff;
+  border-radius:4px;
+  padding:6px 12px;
+  margin-top:6px;
+}
+
+/* ---- certification / badge grids --------------------------------------- */
+
+#box{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(84px,1fr));
+  gap:10px;
+  max-width:none;
+  border:none;
+  border-radius:0;
+  margin:12px 0 24px;
+  padding:0;
+}
+
+/* Reset the old global image rule (forced 85px width + grey background
+   that made most badges look tiny and dull). Give badges room instead. */
+img{
+  background-color:transparent !important;
+  width:auto;
+  max-width:100%;
+  padding:0;
+  margin:0;
+}
+
+#box img{
+  width:100%;
+  height:auto;
+  aspect-ratio:1/1;
+  object-fit:contain;
+  background:var(--card) !important;
+  border:1px solid var(--line);
+  border-radius:6px;
+  padding:8px !important;
+  transition:transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+#box a{ display:block; }
+#box img:hover{
+  transform:translateY(-2px);
+  border-color:var(--accent);
+  box-shadow:0 4px 10px rgba(16,27,36,.12);
+}
+
+#course_certificate,#course_cert{
+  border:1px solid var(--line) !important;
+  border-radius:6px;
+  background:var(--card);
+  max-width:220px;
+  padding:4px;
+}
+
+#certification_status{
+  filter:none;
+  opacity:1;
+}
+
+#certification_name{
+  font-family:var(--font-mono);
+  background:var(--paper-2) !important;
+  color:var(--ink) !important;
+  border-radius:4px;
+  line-height:1.6 !important;
+  padding:2px 8px;
+}
+
+.certification{
+  height:auto;
+  margin:8px;
+  padding:10px;
+  background:var(--paper-2);
+  border-radius:6px;
+}
+
+.followers{
+  background:var(--paper-2);
+  font-family:var(--font-mono);
+  font-weight:600;
+  position:relative;
+  top:0;
+  padding:2px 10px;
+  left:0;
+  border-radius:4px;
+}
+
+#architecture{
+  border:1px solid var(--line) !important;
+  border-radius:6px;
+  margin:12px 0;
+  padding:8px;
+  background:var(--card);
+}
+
+/* ---- large inline diagrams / decorative images ------------------------- */
+
+.front{
+  max-width:420px;
+  margin:8px 0;
+  border-radius:6px;
+}
+
+/* ---- social + skill icons (kept for template compatibility) ------------ */
+
+.social-icons a{
+  background-color:var(--paper-2);
+  border-radius:100%;
+  text-align:center;
+  width:50px;
+  height:50px;
+  margin-right:10px;
+  padding-top:14px;
+  display:inline-block;
+}
+.social-icons a:last-child{ margin-right:0; }
+.social-icons a:hover{ background-color:var(--accent) !important; }
+
+.fab,.fas{
+  font-size:20px;
+  color:var(--accent);
+  margin:0 4px;
+  border:2px solid var(--line);
+  padding:6px;
+  border-radius:4px;
+}
+
+.dev-icons{ font-size:2.5rem; }
+.dev-icons .list-inline-item i:hover{ color:var(--accent-2); }
+
+/* ---- footer stripe ------------------------------------------------------
+   Fixed: original CSS targeted .animationStripes but the HTML uses
+   id="animationStripes", so the rule never applied. Now it does. */
+
+#animationStripes{
+  font-family:var(--font-mono);
+  font-size:.75rem;
+  letter-spacing:.04em;
+  color:var(--ink-soft);
+  text-align:center;
+  padding:24px 0;
+  border-top:1px solid var(--line);
+  background:var(--paper);
+}
+
+/* ---- misc / quotes ------------------------------------------------------ */
+
+p#quotes{
+  font-family:var(--font-mono);
+  font-style:italic;
+  font-size:1rem;
+  color:var(--ink-soft);
+  border-radius:0;
+  border-left:3px solid var(--accent);
+  padding:0 0 0 14px !important;
+}
+
+em{ display:inline; color:var(--ink-soft); }
+
+/* ---- responsive ---------------------------------------------------------- */
+
+@media (max-width:768px){
+  section.resume-section{ margin:0 8px; padding:1.5rem !important; }
+  h1{ font-size:1.5rem; }
+  #box{ grid-template-columns:repeat(auto-fill,minmax(64px,1fr)); }
+}
