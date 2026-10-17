@@ -1,0 +1,250 @@
+/* bold.css — load AFTER bootstrap + resume.min.css
+   Direction: thick black outlines, hard offset shadows, electric blue + signal yellow.
+   The one big moment: the hero name slam-in and the cursor-reactive badge walls. */
+
+:root {
+  --ink: #000;
+  --electric: #1e2cff;
+  --navy: #002593;
+  --signal: #ffdd00;
+  --paper: #ffffff;
+  --pop: 5px 5px 0 var(--ink);
+  --pop-lg: 8px 8px 0 var(--ink);
+}
+
+/* ---------- page ---------- */
+body {
+  background-color: var(--paper);
+  background-image: radial-gradient(rgba(30, 44, 255, .18) 1.4px, transparent 1.6px);
+  background-size: 24px 24px;
+}
+
+#scrollbar {
+  position: fixed; top: 0; left: 0; right: 0; height: 6px;
+  background: var(--signal); border-bottom: 2px solid var(--ink);
+  transform-origin: 0 50%; transform: scaleX(0);
+  z-index: 2000; pointer-events: none;
+}
+
+/* ---------- sidebar ---------- */
+.bg-primary {
+  background: linear-gradient(160deg, var(--navy) 0%, var(--electric) 55%, var(--navy) 100%) !important;
+  background-size: 100% 220% !important;
+  animation: sideShift 14s ease-in-out infinite alternate;
+  border-right: 5px solid var(--ink) !important;
+}
+@keyframes sideShift { to { background-position: 0 100%; } }
+
+#sideNav .img-profile {
+  border: 4px solid var(--ink) !important;
+  box-shadow: 0 0 0 4px var(--signal), var(--pop);
+  transition: transform .4s cubic-bezier(.2, .9, .3, 1.4);
+}
+#sideNav .img-profile:hover { transform: rotate(-6deg) scale(1.06); }
+
+@media (min-width: 992px) {
+  #sideNav .navbar-collapse .navbar-nav { background: transparent !important; }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    background: var(--paper) !important;
+    color: var(--ink) !important;
+    border: 3px solid var(--ink);
+    box-shadow: 4px 4px 0 var(--ink);
+    margin-bottom: 10px;
+    transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    background: var(--signal) !important;
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 0 var(--ink);
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link.active {
+    background: var(--signal) !important;
+    color: var(--ink) !important;
+    transform: translate(4px, 4px);
+    box-shadow: 0 0 0 var(--ink);
+  }
+}
+
+/* ---------- sections ---------- */
+@media (min-width: 992px) {
+  section.resume-section {
+    border: 4px solid var(--ink) !important;
+    border-radius: 18px !important;
+    box-shadow: var(--pop-lg) !important;
+    background: var(--paper);
+    margin: 0 0 32px 11px !important;
+  }
+}
+
+/* ---------- headings ---------- */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1 !important;
+  max-width: none !important;
+  background: var(--signal) !important;
+  color: var(--ink) !important;
+  border: 3px solid var(--ink);
+  border-radius: 12px !important;
+  box-shadow: var(--pop) !important;
+  font-weight: 800 !important;
+  display: inline-block;
+  padding: 10px 16px !important;
+}
+h1 { font-size: clamp(2rem, 5vw, 3.4rem) !important; letter-spacing: -.02em; }
+h2 { font-size: 2.2rem !important; background: var(--electric) !important; color: #fff !important; }
+h2 i { color: var(--signal) !important; border-color: var(--signal) !important; }
+
+.mb-0, .mb-5 { color: inherit !important; }
+
+/* hero name letters (injected by bold.js) */
+.char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(70px) rotate(10deg) scale(.6);
+  animation: slam .7s cubic-bezier(.2, 1.1, .3, 1.5) forwards;
+}
+@keyframes slam {
+  60% { opacity: 1; transform: translateY(-8px) rotate(-3deg) scale(1.08); }
+  100% { opacity: 1; transform: none; }
+}
+
+/* headings wipe in once when scrolled to */
+.js .wipe { clip-path: inset(0 100% 0 0); }
+.js .wipe.in { clip-path: inset(0 -10px 0 -10px); transition: clip-path .7s cubic-bezier(.7, 0, .2, 1); }
+
+/* ---------- labels, tags ---------- */
+#gist {
+  background: var(--electric) !important;
+  color: #fff;
+  border: 3px solid var(--ink);
+  border-radius: 10px !important;
+  box-shadow: 4px 4px 0 var(--ink);
+  max-width: none !important;
+  transition: transform .15s, box-shadow .15s;
+}
+#gist:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--ink); }
+#gist a { position: relative; color: #fff; }
+#gist a::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 2px; height: 3px;
+  background: var(--signal); transform: scaleX(0); transform-origin: 0 50%;
+  transition: transform .25s ease;
+}
+#gist a:hover::after { transform: scaleX(1); }
+
+#label {
+  background: var(--signal) !important;
+  color: var(--ink) !important;
+  border: 2px solid var(--ink);
+  box-shadow: 3px 3px 0 var(--ink);
+  opacity: 1 !important;
+}
+#label_courses {
+  background: var(--navy) !important;
+  border: 3px solid var(--ink);
+  box-shadow: 4px 4px 0 var(--ink);
+  font-size: 14pt !important;
+}
+.subheading { color: var(--electric) !important; font-weight: 800; min-height: 2rem; }
+.subheading.typing::after { content: "|"; margin-left: 2px; animation: blink .7s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+/* ---------- skill cards ---------- */
+.intro {
+  border: 3px solid var(--ink) !important;
+  border-radius: 14px;
+  background: var(--paper);
+  box-shadow: var(--pop);
+  transition: box-shadow .2s ease, background .2s ease;
+  will-change: transform;
+}
+.intro:hover { background: #fffbd1; box-shadow: 9px 9px 0 var(--ink); }
+.listing { font-size: 14px; }
+
+/* ---------- details / summary ---------- */
+summary {
+  width: auto !important; max-width: 100%;
+  background: var(--signal);
+  border: 3px solid var(--ink) !important;
+  border-radius: 12px !important;
+  box-shadow: var(--pop);
+  padding: 8px 12px !important;
+  transition: transform .15s, box-shadow .15s;
+}
+summary:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--ink); }
+details[open] > summary { background: var(--electric); color: #fff; }
+details[open] > summary #label,
+details[open] > summary #label_courses { box-shadow: none; }
+details[open] > :not(summary) { animation: unfold .35s ease both; }
+@keyframes unfold { from { opacity: 0; transform: translateY(-12px); } }
+
+/* ---------- badge walls ---------- */
+#box {
+  border: 3px solid var(--ink) !important;
+  border-radius: 14px !important;
+  background: #f4f6ff;
+  box-shadow: var(--pop);
+  max-width: 100% !important;
+  padding: 14px 10px 4px !important;
+  position: relative;
+}
+#box img, #box a { position: relative; }
+#box img {
+  width: 74px;
+  border: 2px solid var(--ink) !important;
+  border-radius: 14px !important;
+  background: #fff;
+  transform-origin: 50% 70%;
+  will-change: transform;
+}
+#box img:hover { opacity: 1 !important; }
+
+/* entrance: badges pop in one after another when the wall is scrolled to */
+.js #box.wall img { opacity: 0; transform: scale(.3) rotate(-14deg); }
+.js #box.wall.in img {
+  animation: popIn .5s cubic-bezier(.2, 1.2, .3, 1.4) forwards;
+  animation-delay: calc(var(--i, 0) * 22ms);
+}
+@keyframes popIn { to { opacity: 1; transform: none; } }
+
+#course_cert, #course_certificate { transition: transform .25s cubic-bezier(.2, .9, .3, 1.4), box-shadow .25s; }
+#course_cert:hover, #course_certificate:hover {
+  transform: scale(2.4) rotate(-2deg);
+  z-index: 50; position: relative;
+  box-shadow: var(--pop);
+  opacity: 1 !important;
+}
+
+/* ---------- misc ---------- */
+img { border-radius: 14px; }
+.front { display: none; }
+
+#animationStripes {
+  width: 100%; max-width: 420px; height: 46px; margin: 24px auto;
+  color: #fff; font-weight: 800; line-height: 46px !important; text-align: center;
+  background-image: repeating-linear-gradient(-45deg, #000 0, #000 25px, var(--electric) 25px, var(--electric) 50px);
+  background-size: 150% 100%;
+  border: 3px solid var(--ink); border-radius: 10px; box-shadow: var(--pop);
+  animation: progress 2s linear infinite;
+  text-shadow: 2px 2px 0 #000;
+}
+
+#glow {
+  position: fixed; left: 0; top: 0; width: 380px; height: 380px; margin: -190px 0 0 -190px;
+  border-radius: 50%; pointer-events: none; z-index: 0;
+  background: radial-gradient(circle, rgba(255, 221, 0, .28), rgba(30, 44, 255, .10) 45%, transparent 70%);
+  transition: opacity .3s; opacity: 0;
+}
+
+a:focus-visible, summary:focus-visible, button:focus-visible {
+  outline: 4px solid var(--signal); outline-offset: 3px;
+}
+
+@media (max-width: 991.98px) {
+  h2 { font-size: 1.6rem !important; }
+  #course_cert:hover, #course_certificate:hover { transform: scale(1.8); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .char, .js #box.wall img { opacity: 1 !important; transform: none !important; }
+  .js .wipe { clip-path: none !important; }
+}
